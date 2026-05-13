@@ -15,35 +15,25 @@
     --rule-strong: #cbd5e1;
     --kristy: #15803d;
     --kristy-bg: #f0fdf4;
-    --kristy-rule: #bbf7d0;
     --grant: #1d4ed8;
     --grant-bg: #eff6ff;
-    --grant-rule: #bfdbfe;
+    --new: #b45309;
+    --new-bg: #fffbeb;
   }
-
   * { box-sizing: border-box; }
-
   html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     background: var(--bg);
     color: var(--ink);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 13.5px;
-    line-height: 1.45;
-    -webkit-font-smoothing: antialiased;
+    font-size: 13px;
+    line-height: 1.42;
   }
-
-  .wrap {
-    max-width: 920px;
-    margin: 0 auto;
-    padding: 28px 28px 36px;
-  }
-
+  .wrap { max-width: 940px; margin: 0 auto; padding: 24px 24px 28px; }
   header {
     border-bottom: 2px solid var(--ink);
-    padding-bottom: 12px;
-    margin-bottom: 18px;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
   }
   header .eyebrow {
     text-transform: uppercase;
@@ -51,36 +41,33 @@
     font-size: 10px;
     font-weight: 700;
     color: var(--ink-fade);
-    margin-bottom: 4px;
+    margin-bottom: 3px;
   }
   header h1 {
-    font-size: 22px;
+    font-size: 21px;
     line-height: 1.2;
     margin: 0 0 4px;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
   header .subtitle {
-    font-size: 12.5px;
+    font-size: 12px;
     color: var(--ink-soft);
     margin: 0;
   }
-
   .columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
+    gap: 14px;
   }
   @media (max-width: 720px) { .columns { grid-template-columns: 1fr; } }
-
   .col {
     border: 1px solid var(--rule-strong);
     border-radius: 8px;
-    padding: 16px 18px 18px;
+    padding: 14px 16px 16px;
   }
-  .col.kristy { border-top: 5px solid var(--kristy); background: var(--kristy-bg); }
-  .col.grant  { border-top: 5px solid var(--grant);  background: var(--grant-bg);  }
-
+  .col.kristy { border-top: 4px solid var(--kristy); background: var(--kristy-bg); }
+  .col.grant  { border-top: 4px solid var(--grant);  background: var(--grant-bg);  }
   .col .col-label {
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -91,7 +78,7 @@
   .col.kristy .col-label { color: var(--kristy); }
   .col.grant  .col-label { color: var(--grant); }
   .col h2 {
-    font-size: 16.5px;
+    font-size: 15.5px;
     margin: 0 0 2px;
     line-height: 1.25;
     color: var(--ink);
@@ -100,43 +87,41 @@
   .col .col-tag {
     font-style: italic;
     color: var(--ink-soft);
-    font-size: 12px;
-    margin: 0 0 12px;
+    font-size: 11.5px;
+    margin: 0 0 10px;
   }
-
   ol.points {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     list-style: none;
     counter-reset: pnum;
   }
   ol.points li {
     counter-increment: pnum;
     position: relative;
-    padding: 8px 0 8px 26px;
+    padding: 7px 0 7px 24px;
     border-top: 1px solid rgba(15,23,42,0.06);
   }
-  ol.points li:first-child { border-top: none; padding-top: 4px; }
+  ol.points li:first-child { border-top: none; padding-top: 3px; }
   ol.points li::before {
     content: counter(pnum);
     position: absolute;
     left: 0;
-    top: 8px;
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
+    top: 7px;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
     text-align: center;
     background: var(--ink);
     color: #fff;
     border-radius: 999px;
-    font-size: 10.5px;
+    font-size: 10px;
     font-weight: 700;
   }
-  ol.points li:first-child::before { top: 4px; }
+  ol.points li:first-child::before { top: 3px; }
   ol.points .head {
     font-weight: 700;
     color: var(--ink);
-    font-size: 13.5px;
+    font-size: 13px;
     line-height: 1.4;
     display: block;
   }
@@ -144,32 +129,43 @@
     display: block;
     margin-top: 3px;
     font-style: italic;
-    font-size: 11.5px;
+    font-size: 11px;
     color: var(--ink-fade);
-    line-height: 1.4;
+    line-height: 1.38;
   }
   ol.points .proof b {
     font-style: normal;
     font-weight: 600;
     color: var(--ink-soft);
   }
-
+  .new-pill {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 1px 6px;
+    border-radius: 999px;
+    background: var(--new-bg);
+    color: var(--new);
+    border: 1px solid #fde68a;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
   footer {
-    margin-top: 22px;
-    padding-top: 10px;
+    margin-top: 16px;
+    padding-top: 8px;
     border-top: 1px solid var(--rule);
     color: var(--ink-fade);
     font-size: 10.5px;
     line-height: 1.5;
   }
   footer p { margin: 0; }
-
   @media print {
-    @page { margin: 0.5in; }
-    body { font-size: 10pt; }
+    @page { margin: 0.4in; }
+    body { font-size: 9.5pt; }
     .wrap { max-width: 100%; padding: 0; }
-    header { page-break-inside: avoid; }
-    .col { page-break-inside: avoid; }
+    header, .col, footer { page-break-inside: avoid; }
   }
 </style>
 </head>
@@ -179,7 +175,7 @@
   <header>
     <div class="eyebrow">For Soo-Jin · GDI Board Meeting · May 13, 2026</div>
     <h1>What the Salesforce program delivers — for Kristy and for Grant</h1>
-    <p class="subtitle">Twelve high-level benefits surfaced through nine weeks of discovery and scoping with LeafGuard, Patio Enclosures, and Champion. Six on the front of the funnel (Kristy / CMO); six in retail operations (Grant / CRO).</p>
+    <p class="subtitle">Thirteen board-grade benefits surfaced through nine weeks of discovery and scoping with LeafGuard, Patio Enclosures, and Champion Windows. Six on the front of the funnel (Kristy / CMO); seven in retail operations (Grant / CRO). Every operator quote is verbatim.</p>
   </header>
 
   <div class="columns">
@@ -192,27 +188,27 @@
       <ol class="points">
         <li>
           <span class="head">Marketing finally gets a "shopping cart" it can test on.</span>
-          <span class="proof"><b>Chris Jarvis (Marketing Tech):</b> "If I think about an e-com business, they're constantly testing on their shopping cart. This is effectively our shopping cart and we have very little ability to test on it."</span>
+          <span class="proof"><b>Chris Jarvis (Director of Digital Marketing):</b> "If I think about an e-com business, they're constantly testing on their shopping cart. This is effectively our shopping cart and we have very little ability to test on it."</span>
         </li>
         <li>
-          <span class="head">The current tech stack is causing a lot of headache and time-spend for users — Salesforce becomes one pane of glass for the agent.</span>
-          <span class="proof"><b>Chris Jarvis:</b> "Hatch SMS, HeavySet emailing, RingCentral channels — agents bouncing between windows all the time."</span>
+          <span class="head">The current tech stack costs users headache and time — Salesforce becomes one pane of glass.</span>
+          <span class="proof"><b>Justin Hennessey (VP Operations, PE):</b> "We're in three different systems so far, trying to set a damn appointment that is the lifeblood of a business."</span>
         </li>
         <li>
-          <span class="head">A new unified lead taxonomy will deliver cleaner reporting on KPIs across brands.</span>
-          <span class="proof"><b>David Rosser (LG):</b> "LeafGuard, LeafGuard Rehash, LeafGuard Costco, LeafGuard Canvassing — you have to know how to work the system to pull a report that's accurate."</span>
+          <span class="head">A unified lead taxonomy delivers cleaner cross-brand reporting — and ends the daily manual cleanup.</span>
+          <span class="proof"><b>Melissa Skinner (VP Marketing, PE):</b> "We could make somewhere between 10 and 100 adjustments on any given day." <b>David Rosser (President, LG)</b> on the taxonomy itself: "LeafGuard, LeafGuard Rehash, LeafGuard Costco, LeafGuard Canvassing — you have to know how to work the system to pull a report that's accurate."</span>
         </li>
         <li>
           <span class="head">Consent management out of Excel — 100% enforcement, regulatory risk drops.</span>
-          <span class="proof"><b>Alex Grist (PE Client Experience)</b> on the manual do-not-contact tracker she maintains today: "A major lift that we need help with for sure."</span>
+          <span class="proof"><b>Alex Grist (PE Client Experience)</b> on the manual do-not-contact tracker she maintains today: "A major lift that we need help with for sure." <b>Melissa Skinner</b> adds that the current platform forces opt-IN as default — direct TCPA exposure on the way out.</span>
         </li>
         <li>
           <span class="head">Installations aren't living up to marketing's potential.</span>
-          <span class="proof"><b>David Rosser:</b> "Fifty percent of the time, they would be able to see that this isn't LeafGuard. Today we're rolling trucks every time a customer calls." Marketing dollars wasted, brand erosion at the first-line service moment.</span>
+          <span class="proof"><b>David Rosser:</b> "Fifty percent of the time, they would be able to see that this isn't LeafGuard. Today we're rolling trucks every time a customer calls." Marketing dollars wasted; brand erosion at the first-line service moment.</span>
         </li>
         <li>
-          <span class="head">A unified customer experience will enable cross-selling across brands and learning from inter-brand success.</span>
-          <span class="proof">Pairs directly to <b>Soo-Jin's own frame</b> ("Cross-sell, upsell is the name of the game for Great Day right now"). One household, multiple brands, one platform.</span>
+          <span class="head">A unified customer experience enables cross-selling across brands and inter-brand learning.</span>
+          <span class="proof">Pairs directly to <b>Soo-Jin's own frame:</b> "Cross-sell, upsell is the name of the game for Great Day right now." One household, multiple brands, one platform.</span>
         </li>
       </ol>
     </div>
@@ -225,15 +221,19 @@
       <ol class="points">
         <li>
           <span class="head">$2.25 B of unworked quoted pipeline at PE becomes visible.</span>
-          <span class="proof"><b>Mike Moore (PE):</b> "In 2024 we wrote $2.5B of quotes and sold $250M of those. There's 85% just hanging out there."</span>
+          <span class="proof"><b>Mike Moore (PE):</b> "In 2024 we wrote $2.5 B of quotes and sold $250 M of those. There's 85% just hanging out there."</span>
         </li>
         <li>
           <span class="head">Real-time job-cost variance closes the margin leak.</span>
-          <span class="proof"><b>Mike Moore:</b> "Three or four points worth of margin on a $300 million business." Last month $1M in expenses hit jobs already claimed for revenue.</span>
+          <span class="proof"><b>Mike Moore:</b> "Three or four points worth of margin on a $300 million business." Last month $1 M in expenses landed on jobs already claimed for revenue.</span>
         </li>
         <li>
-          <span class="head">Service &amp; warranty stop being a black box — ~$2M/year of upsell becomes attributable.</span>
-          <span class="proof"><b>Mike Moore:</b> "A couple million dollars a year out of our service referrals" — driven by 65 years of installs, single-pane upgradable units, screen-room-only units.</span>
+          <span class="head">The customer stops being the system's bug-tracker.<span class="new-pill">New</span></span>
+          <span class="proof"><b>Justin Hennessey (PE)</b>, asked how service scheduling fits in: "When they're screaming." <b>Mike Moore:</b> "Closing services out is a hit and miss process… nobody's going back into the system to complete it." Today, fractured platforms route work to the wrong queue and there's no system gate that says a job is 100% done — so the customer is the discovery mechanism. Salesforce Service Cloud + Field Service workflow gates close every job to a tracked state and trigger cases automatically when completion criteria aren't met.</span>
+        </li>
+        <li>
+          <span class="head">Service &amp; warranty stop being a black box — ~$2 M/year of upsell becomes attributable.</span>
+          <span class="proof"><b>Mike Moore:</b> "A couple million dollars a year out of our service referrals" — 65 years of installs, single-pane upgradable units, screen-room-only units, all upsell-ready.</span>
         </li>
         <li>
           <span class="head">Service A/R stops being silently written off.</span>
@@ -245,7 +245,7 @@
         </li>
         <li>
           <span class="head">LG installer economics become measurable for the first time.</span>
-          <span class="proof"><b>David Rosser &amp; Amanda Opara:</b> 30,000 installs/year at ~$12K average — sold at 3–4× competitor pricing. <b>$1,200/hour</b> revenue per crew. <b>98% one-call close.</b> None of it captured as a system metric today.</span>
+          <span class="proof"><b>David Rosser &amp; Amanda Opara:</b> 30,000 installs/year at ~$12 K average — sold at 3–4× competitor pricing. <b>$1,200/hour</b> revenue per crew. <b>98% one-call close.</b> Amanda: "That's a report that we want and we need." None of it captured as a system metric today.</span>
         </li>
       </ol>
     </div>
@@ -253,7 +253,7 @@
   </div>
 
   <footer>
-    <p><b>Source:</b> Cirrius discovery and scoping transcripts (Apr 13 – May 12, 2026) — LG / PE / Champion / Apex / UWD / TBA SF-sessions + on-site discovery + Marketing &amp; Lead Attribution sessions + Project Team meetings + ETI Learning Sessions. Operator quotes verbatim. <b>Prepared by:</b> Cirrius Solutions · Jon Cooper.</p>
+    <p><b>Source:</b> Cirrius discovery and scoping transcripts, Apr 13 – May 12, 2026 — LG / PE / Champion / Apex / UWD / TBA SF-sessions + on-site discovery + Marketing &amp; Lead Attribution sessions + Project Team meetings + ETI Learning Sessions. Operator quotes verbatim. <b>Prepared by:</b> Cirrius Solutions · Jon Cooper.</p>
   </footer>
 
 </div>
