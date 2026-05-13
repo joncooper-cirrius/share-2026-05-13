@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Cirrius Operator-Evidence Companion — May 13, 2026</title>
+<style>
+  :root {
+    --ink: #0f172a;
+    --ink-soft: #334155;
+    --ink-fade: #64748b;
+    --bg: #ffffff;
+    --bg-soft: #f8fafc;
+    --rule: #e2e8f0;
+    --rule-strong: #cbd5e1;
+    --kristy: #b91c1c;
+    --kristy-bg: #fef2f2;
+    --cirrius: #1d4ed8;
+    --cirrius-bg: #eff6ff;
+    --joe: #6b7280;
+    --money: #b45309;
+    --money-bg: #fffbeb;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 28px 28px 64px;
+  }
+
+  header.banner {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  header.banner .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink-fade);
+    margin-bottom: 6px;
+  }
+  header.banner h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  header.banner .subtitle {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 720px;
+  }
+
+  .objection {
+    margin: 0 0 22px;
+    border: 1px solid var(--rule-strong);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .objection .obj-head {
+    background: var(--kristy-bg);
+    border-left: 5px solid var(--kristy);
+    padding: 12px 18px;
+  }
+  .objection .obj-head .obj-label {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--kristy);
+    margin: 0 0 3px;
+  }
+  .objection .obj-head .obj-quote {
+    font-size: 15.5px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0;
+    font-style: italic;
+  }
+  .objection .joe-line {
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--rule);
+    padding: 10px 18px;
+    font-size: 13px;
+    color: var(--joe);
+  }
+  .objection .joe-line b {
+    color: var(--ink-soft);
+    font-style: normal;
+  }
+  .objection .cirrius-body {
+    padding: 14px 18px 16px;
+    background: var(--cirrius-bg);
+  }
+  .objection .cirrius-body .cirrius-label {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--cirrius);
+    margin: 0 0 8px;
+  }
+  .objection .cirrius-body ul {
+    margin: 0;
+    padding: 0 0 0 18px;
+  }
+  .objection .cirrius-body ul li {
+    margin: 0 0 6px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .objection .cirrius-body ul li b { color: var(--ink); }
+  .objection .cirrius-body ul li em {
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+  .objection .cirrius-body ul li .src {
+    color: var(--ink-fade);
+    font-size: 12px;
+  }
+
+  .roi-block {
+    margin-top: 8px;
+    background: var(--money-bg);
+    border: 1px solid #fde68a;
+    border-left: 5px solid var(--money);
+    border-radius: 10px;
+    padding: 16px 20px;
+  }
+  .roi-block .roi-label {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--money);
+    margin: 0 0 6px;
+  }
+  .roi-block h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: var(--ink);
+  }
+  .roi-block p.lead {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin: 0 0 10px;
+    font-style: italic;
+  }
+  .roi-block ul {
+    margin: 0;
+    padding: 0 0 0 18px;
+  }
+  .roi-block ul li {
+    margin: 0 0 5px;
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+  .roi-block ul li b {
+    color: var(--money);
+    font-weight: 700;
+  }
+  .roi-block ul li .src {
+    color: var(--ink-fade);
+    font-size: 12px;
+  }
+
+  footer {
+    margin-top: 28px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-fade);
+    font-size: 11.5px;
+    line-height: 1.55;
+  }
+  footer p { margin: 0; }
+
+  @media print {
+    body { font-size: 10.5pt; }
+    .wrap { max-width: 100%; padding: 0; }
+    .objection { page-break-inside: avoid; }
+    .roi-block { page-break-inside: avoid; }
+    header.banner h1 { font-size: 18pt; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="banner">
+    <div class="eyebrow">Cirrius Operator-Evidence Companion · Pairs with Joe Rockland's note to Soo-Jin · May 13, 2026</div>
+    <h1>The four objections, ground-truthed by 9 weeks of discovery</h1>
+    <p class="subtitle">Joe's note carries the Salesforce institutional voice — platform, ecosystem, total cost of ownership. This one-pager carries the Cirrius operator-grounded voice. For each objection: what Joe says briefly, then what the discovery team has actually measured across LeafGuard, Patio Enclosures, and Champion.</p>
+  </header>
+
+  <!-- OBJECTION 1 -->
+  <div class="objection">
+    <div class="obj-head">
+      <p class="obj-label">Objection 1</p>
+      <p class="obj-quote">"I can build a CRM quickly and easily in Claude."</p>
+    </div>
+    <div class="joe-line"><b>Joe (Salesforce):</b> The visible 10% is a CRM interface; the 90% — enterprise security, multi-brand data architecture, integrations, ongoing maintenance — is the hidden engineering liability.</div>
+    <div class="cirrius-body">
+      <p class="cirrius-label">Cirrius — we measured the 90%</p>
+      <ul>
+        <li><b>~5 million records per brand</b> entering the migration. PCMS records date back to 1980, with some carrying forced "1930" placeholders from the original paper-to-digital ingestion. <span class="src">— LG / PE discovery</span></li>
+        <li><b>6 CRMs across the portfolio today.</b> <span class="src">— Soo-Jin's own count, ETI Learning Session.</span> Plus the auxiliary stack: i360, Centah, PCMS, Microsoft Dynamics 365 CE, Vendo, Folio, Hatch, HeavySet, RingCentral, Five9, BirdDog (~30 aggregator feeds), Sales Rabbit, Laserfiche, ADP, KPA, GeoTab, Workato, ~5 finance partners with per-lender APIs.</li>
+        <li><b>TCPA-noncompliant opt-in is baked into PCMS today.</b> "Our system forcing an opt-in… is a challenge." <span class="src">— Melissa Skinner, PE.</span> Direct regulatory exposure that a roll-your-own CRM would inherit.</li>
+        <li><b>"Millions of dollars" in lender dealer fees</b> require per-lender API integration to manage. <span class="src">— Sven Kramer, PE.</span> Five live finance partners at PE alone, each with unique app IDs.</li>
+        <li><b>12 cross-brand foundation locks</b> already negotiated through 8 sessions of scoping and 8 days of on-site discovery across LG, PE, Champion. <span class="src">— Lane 1 readbacks.</span> That negotiation work doesn't come pre-built in any AI-generated CRM.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- OBJECTION 2 -->
+  <div class="objection">
+    <div class="obj-head">
+      <p class="obj-label">Objection 2</p>
+      <p class="obj-quote">"Implementations of Salesforce are rarely smooth."</p>
+    </div>
+    <div class="joe-line"><b>Joe (Salesforce):</b> Phased delivery + firm SOW + Cirrius as a proven partner is exactly the structure that de-risks the rollout.</div>
+    <div class="cirrius-body">
+      <p class="cirrius-label">Cirrius — here is how this one is being de-risked</p>
+      <ul>
+        <li><b>Hybrid waterfall + agile delivery model.</b> Discovery across 6 brands → Global Operating Model designed once → focused implementation on LeafGuard (and likely Patio Enclosures). Avoids both the eleven-brand-waterfall risk and the brand-by-brand-agile-into-incompatible-builds risk.</li>
+        <li><b>12 cross-brand foundation locks</b> confirmed independently by three different operating models (LG, PE, CHW) before a line of code is written. When three brands converge on the same answer, it's a foundation lock, not a brand quirk.</li>
+        <li><b>Cirrius commitment on the timeline, from Jeff Loven (PM):</b> <em>"February 1st is a no-fail target — we can't mitigate the risk by adding buffer to the timeline."</em> The team is managing holiday velocity loss without timeline slip.</li>
+        <li><b>Governance is settled in operator language, not Cirrius language.</b> Brian Perry: <em>"Post-sale RevOps is Grant. Pre that is Kristy. Soo-Jin resolves impasse. Brian is point of contact before C-suite."</em></li>
+        <li><b>The Nov-30-to-Feb-1 contract gap is already surfaced and addressed.</b> Project-based SOW addendum for build / UAT / go-live, plus extending the pod for run-rate. No surprises in February.</li>
+        <li><b>Cirrius posture: "Most technical project setbacks are due to non-technical reasons."</b> <span class="src">— Jeff Loven.</span> Change management and decision velocity are the moat, not Salesforce expertise alone.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- OBJECTION 3 -->
+  <div class="objection">
+    <div class="obj-head">
+      <p class="obj-label">Objection 3</p>
+      <p class="obj-quote">"Salesforce is just a master customer record."</p>
+    </div>
+    <div class="joe-line"><b>Joe (Salesforce):</b> Field Service, Marketing Cloud, Data Cloud, and Agentforce on top of the unified data layer turn Salesforce into the operating system for the business.</div>
+    <div class="cirrius-body">
+      <p class="cirrius-label">Cirrius — every Salesforce capability maps to a specific GDI operator ask</p>
+      <ul>
+        <li><b>Sales Cloud + CPQ →</b> Mike Moore's structured-discount-governance ask, the "Brian Perry's brain" pricing extraction, the $2.25B of stranded PE quote pipeline (PE wrote $2.5B and sold $250M in 2024).</li>
+        <li><b>Field Service + dedicated contractor portal →</b> the PE subcontractor adoption pattern (DIRs, photos, COS signatures, ETA, material attestation) on personal devices, without forcing sub-as-employee.</li>
+        <li><b>Service Cloud + Entitlements →</b> Champion's ~20 warranty variants "left to interpretation" (Kelly Meyers); PE's service AR that gets silently written off (Mike Moore); manufacturer problem-reports that today never make it back to the line.</li>
+        <li><b>Experience Cloud →</b> cross-brand customer portal (LG's "pizza tracker" ask from David Rosser, PE's explicit ask from Mike Moore, foundation for cross-brand household orchestration).</li>
+        <li><b>Account hierarchies (house-centric model) →</b> the federation thesis ratified by three brands independently. Brian Perry: <em>"they are the home."</em></li>
+        <li><b>Workato + ERP-agnostic schema →</b> bidirectional sync to Dynamics NAV today, holds through the 2027 enterprise-ERP consolidation. Job-cost, inventory, AR, per-lender APIs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- OBJECTION 4 -->
+  <div class="objection">
+    <div class="obj-head">
+      <p class="obj-label">Objection 4</p>
+      <p class="obj-quote">"At previous companies, Salesforce slowed us down instead of improving us."</p>
+    </div>
+    <div class="joe-line"><b>Joe (Salesforce):</b> That's the symptom of over-customization, under-investment in adoption, or a bloated org — not a flaw in the platform.</div>
+    <div class="cirrius-body">
+      <p class="cirrius-label">Cirrius — this rollout is structured to avoid each failure mode</p>
+      <ul>
+        <li><b>LG is pulling for this, not pushing back.</b> David Rosser and Amanda Opara have surfaced ask after ask through 8 sessions of scoping and 8 days of discovery — dummy-proofed paperwork, dispatch optimization, $1,200/hour crew-revenue tracking. The platform inherits an operator that sees modernizing as an imperative.</li>
+        <li><b>Global Design upfront is itself the anti-bloat structure.</b> The over-customization trap happens when each brand bends the platform to its own legacy quirks. Twelve foundation locks negotiated upfront mean Phase 1 is being built against the design, not against eleven separate operating models.</li>
+        <li><b>Champion is the in-house proof.</b> Already runs the house-centric customer model on Microsoft Dynamics 365 CE with auto-routing by skill and proficiency, 13,800 appointments / month, 70% sit rate, three API-funded customer-incentive engines. We are standardizing what one of the brands already proves works.</li>
+        <li><b>The KPI scoreboard is locked early.</b> Five Charter Success Metrics, GDI-authored and leadership-validated: Set Rate, Speed to Lead, Consent Enforcement, Brand Visibility, Executive Reporting. Lead Conversion Rate explicitly removed (working-session decision: not what this Phase 1 can move).</li>
+        <li><b>Speed-to-Lead momentum is already in motion before the platform ships.</b> Pedro Guimaraes: UWD went from high-30%s to high-70%s in eight weeks of operating discipline.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ROI BLOCK -->
+  <div class="roi-block">
+    <p class="roi-label">ROI evidence — operator-stated</p>
+    <h3>While Pedro and Joe finalize the formal ROI model</h3>
+    <p class="lead">Each figure below came directly from a GDI operator in discovery or scoping. None of these are Cirrius projections — they are what the business has already measured or quoted in its own words.</p>
+    <ul>
+      <li><b>$2.25 B</b> in stranded PE quote pipeline. PE wrote $2.5B of quotes in 2024 and sold $250M — 85% sitting unworked. <span class="src">— Mike Moore, PE.</span></li>
+      <li><b>~$1 M / month</b> margin leak at PE from lagging expense recognition — 3-4 margin points on a $300M business. <span class="src">— Mike Moore.</span></li>
+      <li><b>$60 M</b> annual PE marketing spend at stake on lead-routing intelligence. <span class="src">— Melissa Skinner, VP Marketing.</span></li>
+      <li><b>600,000 PE rooms installed historically</b> — an untapped referral engine the platform finally activates. <span class="src">— Melissa Skinner.</span></li>
+      <li><b>~$2M / year</b> in PE service-referral upsell revenue today, untracked and unattributed. <span class="src">— Mike Moore.</span></li>
+      <li><b>30,000 LG installs / year</b> at ~$12K average — sold at 3–4× competitor pricing, with $1,200/hour crew-revenue that LG explicitly wants captured as a metric. <span class="src">— David Rosser &amp; Amanda Opara, LG.</span></li>
+      <li><b>13,800 Champion sales appointments in April alone</b> at 70% sit rate — the operating scale the foundation has to absorb. <span class="src">— Champion discovery.</span></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p><b>Source:</b> Cirrius discovery and scoping transcripts, Apr 13 – May 12, 2026 — LG / PE / CHW SF-1 through SF-6 + ERP, Apex / UWD / TBA scoping, Marketing &amp; Lead Attribution sessions, Project Team meetings, SteerCo, ETI Learning Sessions. Operator quotes verbatim from the raw transcripts.</p>
+    <p style="margin-top:6px;"><b>Prepared by:</b> Cirrius Solutions · Jon Cooper (Account Director) · May 13, 2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>
